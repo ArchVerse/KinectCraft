@@ -1,0 +1,9 @@
+D:\Users\Arch\Games\C# Games\KinectCraft\KinectCraft\bin\Release\KinectCraft.exe
+D:\Users\Arch\Games\C# Games\KinectCraft\KinectCraft\bin\Release\KinectCraft.pdb
+D:\Users\Arch\Games\C# Games\KinectCraft\KinectCraft\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Users\Arch\Games\C# Games\KinectCraft\KinectCraft\obj\x86\Release\KinectCraft.Form1.resources
+D:\Users\Arch\Games\C# Games\KinectCraft\KinectCraft\obj\x86\Release\KinectCraft.Properties.Resources.resources
+D:\Users\Arch\Games\C# Games\KinectCraft\KinectCraft\obj\x86\Release\GenerateResource.read.1.tlog
+D:\Users\Arch\Games\C# Games\KinectCraft\KinectCraft\obj\x86\Release\GenerateResource.write.1.tlog
+D:\Users\Arch\Games\C# Games\KinectCraft\KinectCraft\obj\x86\Release\KinectCraft.exe
+D:\Users\Arch\Games\C# Games\KinectCraft\KinectCraft\obj\x86\Release\KinectCraft.pdb

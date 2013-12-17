@@ -1,0 +1,77 @@
+Requirements
+------------
+- Microsoft Xbox 360 Kinect
+- .NET Framework 4
+- Java JRE
+- Microsoft Kinect 1.0 Beta2 SDK
+- Windows Vista or Later
+
+KinectCraft is an attempt at integrating the Xbox 360 Kinect into Minecraft.
+The user can calibrate the program with the following action: 
+1. Hold both arms out to the side of you.
+2. Then bring your hands, horizontally, into your chest.
+3. Move both hands vertically upwards above your head and bring them back down again.
+
+This calibration sets your idle position so the program can use it as a reference to measure distances you step.
+
+The Kinect reads certain gestures performed by the user and feeds information into the program. The program then uses a Socket to feed commands to the Java counterpart
+of this program.
+
+The Java counterpart is a collection of modified Minecraft files which run from within the game. The game essentially sets up a server only on the local computer. This server recieves commands from the C# program and turns
+those commands into in-game actions.
+
+KinectCraft has several interaction styles:
+
+ Turn Mode
+ ---------
+ This is set by changing the value of the TurnMode enumeration, 'turnMode' in the Form1.cs file
+ 
+ Options:
+	- LookAndSpin
+		When the shoulders are rotated the camera will rotate with the shoulders and sit still while the shoulders are still.
+		When the shoulders are rotated beyond a certain point, the camera will spin in the direction the shoulders are rotated, increasing in speed the further the shoulders are rotated, and will only stop when the shoulders return to their original rotation which is set during calibration.
+	
+	- SpinOnly
+		The camera spins as described in LookAndSpin apart from the spin starts from any degree of shoulder rotation other than the idle rotation set during calibration.
+	
+	- Hybrid
+		While the player is standing still, the camera rotates as if it is in SpinOnly mode.
+		While the player is moving, the camera acts as if it is in LookAndSpin mode.
+		#The reason for this is that most of the time both of the modes are useful, just at different times so the user can make use of both modes easily.
+	
+	- Switch
+		The camera's behaviour can be toggled between 'LookAndSpin' mode and 'SpinOnly' mode with this option.
+		The modes are toggled by bring both hands together and then apart as if performing a slightly slowed clapping gesture.
+	
+ Head Mode
+ ---------
+ This is set by changing the value of the boolean flag, 'headMode' in the Form1.cs file
+ This affects what the user does to make the in-game player move.
+ 
+ Options:
+	- true
+		While headMode is true the camera rotation is esentially in 'LookAndSpin' mode apart from the 'looking' part of LookAndSpin
+		is controlled by rotating the user's head. (This is experimental and quite unstable)
+		The 'spinning' part of the LookAndSpin mode is controlled by the shoulders just like the SpinOnly mode.
+		
+		While headMode is true, the user moves the in-game player in a direction by leaning their torso in said direction.
+		(There is a bug in this mode where the in-game camera floats upwards slowly while moving)
+	
+	- false
+		Much more stable when headMode is false.
+		The camera rotation is controlled by the TurnMode as explained above.
+		The user moves the player by stepping in a one of four directions (Foreward, Backward, Left, Right)
+		or diagonally to combine either Foreward or Backward with either Left or Right.
+		Looking up or down is controlled by leaning the torso forewards or backwards in this mode.
+		
+ Other Actions
+ -------------
+ 
+ KinectCraft supports other actions such as: Jumping, Sneaking (Crouching), and Left and Right mouse buttons.
+ 
+ Jumping and Sneaking (Crouching) are controlled the way you would expect: Jumping or crouching... duh!
+ To control the in game use of the left and right mouse buttons, the user pushes either their left or right hand straight out in front of them in a punching motion.
+ 
+ Depending on the situation in game, holding either hand out in front of you without pulling it back may only act once, or it may continually repeat the action until the hand is pulled back towards the torso.
+ 
+

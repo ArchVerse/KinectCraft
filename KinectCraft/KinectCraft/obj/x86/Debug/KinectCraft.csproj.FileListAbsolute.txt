@@ -1,0 +1,9 @@
+D:\Users\Arch\Games\C# Games\KinectCraft\KinectCraft\obj\x86\Debug\KinectCraft.Properties.Resources.resources
+D:\Users\Arch\Games\C# Games\KinectCraft\KinectCraft\bin\Debug\KinectCraft.exe
+D:\Users\Arch\Games\C# Games\KinectCraft\KinectCraft\bin\Debug\KinectCraft.pdb
+D:\Users\Arch\Games\C# Games\KinectCraft\KinectCraft\obj\x86\Debug\KinectCraft.exe
+D:\Users\Arch\Games\C# Games\KinectCraft\KinectCraft\obj\x86\Debug\KinectCraft.pdb
+D:\Users\Arch\Games\C# Games\KinectCraft\KinectCraft\obj\x86\Debug\KinectCraft.Form1.resources
+D:\Users\Arch\Games\C# Games\KinectCraft\KinectCraft\bin\Debug\KinectCraft.exe.config
+D:\Users\Arch\Games\C# Games\KinectCraft\KinectCraft\obj\x86\Debug\KinectCraft.csprojResolveAssemblyReference.cache
+D:\Users\Arch\Games\C# Games\KinectCraft\KinectCraft\obj\x86\Debug\KinectCraft.csproj.GenerateResource.Cache
