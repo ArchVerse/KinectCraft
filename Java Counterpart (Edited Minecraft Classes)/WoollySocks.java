@@ -6,7 +6,7 @@ import java.util.*;
 
 public class WoollySocks extends Thread {
 
-	static final int PORT = 9001; //OVER NINE THOUSAAAAAAAAAANNNNNDDDDD!!!
+	static final int PORT = 9001;
 	ServerSocket serverSocket = null;
 	public boolean isListening = true;
 	BufferedReader br;
